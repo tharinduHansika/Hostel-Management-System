@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="connection.url"/>
+    <property name="connection.driver_class"/>
+
+    <!--load jdbc connector for the configuration-->
+    <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+
+    <!--will create a new database if not exists or use already having database-->
+    <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/hostel?createDatabaseIfNotExist=true</property>
+
+    <!--your database username-->
+    <property name="hibernate.connection.username">root</property>
+
+    <!--your database pw-->
+    <property name="hibernate.connection.password">1234</property>
+
+    <!--define which database that you gonna use-->
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQL8Dialect</property>
+
+    <!--executing queries in the console is showing or not-->
+    <property name="hibernate.show_sql">true</property>
+
+    <!--wanna drop everything each executing times or not.-->
+    <property name="hibernate.hbm2ddl.auto">update</property>
+
+  </session-factory>
+</hibernate-configuration>

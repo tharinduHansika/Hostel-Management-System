@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="900.0" prefWidth="1050.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.StudentFormController">
+   <children>
+      <JFXTextField fx:id="txtStudentID" layoutX="28.0" layoutY="118.0" prefHeight="25.0" prefWidth="144.0" promptText="Student ID" />
+      <JFXTextField fx:id="txtName" layoutX="208.0" layoutY="118.0" prefHeight="25.0" prefWidth="144.0" promptText="Name" />
+      <JFXTextField fx:id="txtAddress" layoutX="363.0" layoutY="118.0" prefHeight="25.0" prefWidth="144.0" promptText="Address" />
+      <JFXTextField fx:id="txtContactNo" layoutX="531.0" layoutY="118.0" prefHeight="25.0" prefWidth="144.0" promptText="Contact No." />
+      <AnchorPane layoutX="871.0" layoutY="112.0" prefHeight="36.0" prefWidth="151.0" style="-fx-background-color: #95a5a6; -fx-background-radius: 10;">
+         <children>
+            <RadioButton fx:id="rbMale" layoutX="14.0" layoutY="10.0" mnemonicParsing="false" text="Male" />
+            <RadioButton fx:id="rbFemale" layoutX="76.0" layoutY="10.0" mnemonicParsing="false" text="Female" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="821.0" layoutY="122.0" text="Gender" />
+      <TableView fx:id="tblStudent" layoutX="28.0" layoutY="233.0" prefHeight="616.0" prefWidth="994.0">
+        <columns>
+          <TableColumn fx:id="colStudentID" prefWidth="105.0" text="Student ID" />
+          <TableColumn fx:id="colName" prefWidth="181.0" text="Name" />
+            <TableColumn fx:id="colAddress" prefWidth="171.0" text="Address" />
+            <TableColumn fx:id="colContactNo" prefWidth="195.0" text="Contact No." />
+            <TableColumn fx:id="colDOB" prefWidth="194.0" text="DOB" />
+            <TableColumn fx:id="colGender" prefWidth="147.0" text="Gender" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="btnSave" layoutX="383.0" layoutY="170.0" onAction="#btnSaveOnAction" prefHeight="36.0" prefWidth="103.0" style="-fx-background-color: #27ae60;" text="Save" textFill="WHITE" />
+      <JFXTextField fx:id="txtDOB" layoutX="694.0" layoutY="118.0" prefHeight="25.0" prefWidth="112.0" promptText="DOB" />
+      <JFXButton fx:id="btnDelete" layoutX="513.0" layoutY="170.0" onAction="#btnDeleteOnAction" prefHeight="36.0" prefWidth="103.0" style="-fx-background-color: #e74c3c;" text="Delete" textFill="WHITE" />
+      <ImageView fitHeight="60.0" fitWidth="1050.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/student%20topic%20copy.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

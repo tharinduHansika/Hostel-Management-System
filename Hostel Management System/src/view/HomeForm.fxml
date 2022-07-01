@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="background" prefHeight="900.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HomeFormController">
+   <children>
+      <AnchorPane prefHeight="900.0" prefWidth="250.0" style="-fx-background-color: ffffff;">
+         <children>
+            <ImageView fitHeight="900.0" fitWidth="251.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/side%20copy.jpg" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="btnStudent" buttonType="RAISED" layoutY="188.0" onAction="#btnStudentOnAction" prefHeight="43.0" prefWidth="250.0" style="-fx-background-color: #630460;" text="Student" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assest/student-with-graduation-cap%20copy.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></JFXButton>
+            <JFXButton fx:id="bnRoom" buttonType="RAISED" layoutY="253.0" onAction="#btnRoomOnAction" prefHeight="43.0" prefWidth="250.0" style="-fx-background-color: #630460;" text="Room" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assest/bed%20copy.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></JFXButton>
+            <JFXButton fx:id="btnRemainKeyMoney" buttonType="RAISED" layoutY="379.0" onAction="#btnRemainKeyMoneyOnAction" prefHeight="43.0" prefWidth="250.0" style="-fx-background-color: #630460;" text="Remain Key Money" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assest/time%20copy.png" />
+                     </image>
+                  </ImageView>
+               </graphic></JFXButton>
+            <JFXButton fx:id="BtnReservation" buttonType="RAISED" layoutY="314.0" onAction="#btnReservationOnAction" prefHeight="43.0" prefWidth="250.0" style="-fx-background-color: #630460;" text="Reservation" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assest/checked%20copy.png" />
+                     </image>
+                  </ImageView>
+               </graphic></JFXButton>
+            <ImageView fitHeight="157.0" fitWidth="168.0" layoutX="47.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/logo%20copy.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="btnBack" buttonType="RAISED" layoutX="76.0" layoutY="814.0" onAction="#btnBackOnAction" prefHeight="34.0" prefWidth="101.0" style="-fx-background-color: #e74c3c;" text="Back" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="context" layoutX="251.0" prefHeight="900.0" prefWidth="1050.0" />
+   </children>
+</AnchorPane>
